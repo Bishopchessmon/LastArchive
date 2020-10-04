@@ -1,12 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-html, body { 
-    height: 100%; 
-}
-body {
-    margin: 0; 
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-    background-color: #ffffff;
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+* {
+    /* Calculation is (minPX + (Max - Min) * ((VW - ScreenWidthPX) / (MaximumScreenWidth - MinimumScreenWidth)) */
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 /* Layout */
@@ -19,14 +18,10 @@ body {
     margin: 0 auto;
     width: 100%;
     max-width: 1600px;
-}    
+}g
 
 .component-body {
-    background-color: #ffffff;
     padding: 0 16px;
-    
-    /* Calculation is (minPX + (Max - Min) * ((VW - ScreenWidthPX) / (MaximumScreenWidth - MinimumScreenWidth)) */
-    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 /* UTILITY */
@@ -36,45 +31,9 @@ span.spacer {
 
 /* TYPOGRAPHY */
 span,
-h1, h2, h3, h4, h5, 
-p, li {
+h1, h2, h3, h4, h5, p {
     line-height: 1 !important;
 }
-
 .text-center {
     text-align: center !important;
-}
-
-/* SCROLL */
-/* the scrollbar. */
-::-webkit-scrollbar {
-    display: none;
-}
-
-/* the buttons on the scrollbar (arrows pointing upwards and downwards) */
-::-webkit-scrollbar-button {
-}
-
-/* the draggable scrolling handle. */
-::-webkit-scrollbar-thumb {
-    background-color: #f2f2f2;
-}
-
-/* the track (progress bar) of the scrollbar. */
-::-webkit-scrollbar-track  {
-
-}
-
-/* the track (progress bar) NOT covered by the handle. */
-::-webkit-scrollbar-track-piece {
-
-}
-
-/* the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet. */
-::-webkit-scrollbar-corner {
-    
-}
-
-/* the draggable resizing handle that appears at the bottom corner of some elements. */
-::-webkit-resizer {
 }
