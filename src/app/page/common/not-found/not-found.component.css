@@ -1,0 +1,20 @@
+.component {
+    background-image: 
+        radial-gradient( #ffffff, #0000001f );
+}
+
+.not-found > p {
+}
+
+.not-found > h3 {
+    font-weight: 500;
+    font-size: calc(65px + (115 - 65) * ((100vw - 300px) / (1600 - 370)));
+}
+
+
+.not-found > p {
+    font-weight: 300;
+    font-size: calc(8px + (15 - 8) * ((100vw - 300px) / (1600 - 370)));
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
