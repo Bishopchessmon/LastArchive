@@ -3,8 +3,37 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+* {
+    /* Calculation is (minPX + (Max - Min) * ((VW - ScreenWidthPX) / (MaximumScreenWidth - MinimumScreenWidth)) */
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
 
 /* Layout */
 .component {
     background-color: #f2f2f2;
+    min-height: 100%;
+}
+
+.screen-max-width {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.component-body {
+    padding: 0 16px;
+}
+
+/* UTILITY */
+span.spacer {
+    flex: 1 1 auto;
+}
+
+/* TYPOGRAPHY */
+span,
+h1, h2, h3, h4, h5, p {
+    line-height: 1 !important;
+}
+.text-center {
+    text-align: center !important;
 }
