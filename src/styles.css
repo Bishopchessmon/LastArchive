@@ -37,7 +37,7 @@ span.spacer {
 /* TYPOGRAPHY */
 span,
 h1, h2, h3, h4, h5, 
-p {
+p, li {
     line-height: 1 !important;
 }
 

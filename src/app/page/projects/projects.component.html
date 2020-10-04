@@ -4,26 +4,8 @@
             <div class="projects">
                 <h1>Project List</h1>
                 <mat-divider></mat-divider>
-                <div class="projects-list">
-                    <mat-card class="project-item" *ngFor="let project of projects">
-                        <mat-card-header>
-                          <mat-card-title>{{project.name}}</mat-card-title>
-                          <mat-card-subtitle>By: John Dominic Romero</mat-card-subtitle>
-                        </mat-card-header>
-                        <div class="project-preview">
-                            <router-outlet></router-outlet>
-                        </div>
-                        <mat-card-content>
-                          <p>
-                              {{project.description}}
-                          </p>
-                        </mat-card-content>
-                        <mat-card-actions>
-                          <button mat-button>LIKE</button>
-                          <button mat-button>SHARE</button>
-                        </mat-card-actions>
-                    </mat-card>
-                </div>
+                <router-outlet></router-outlet>
+                <app-project-list></app-project-list>
             </div>
         </div>
     </div>

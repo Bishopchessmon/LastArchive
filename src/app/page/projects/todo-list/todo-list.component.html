@@ -1,1 +1,18 @@
-<p>todo-list works!</p>
+<mat-selection-list #selected [multiple]="false">
+    <mat-list-option *ngFor="let choir of choirs; let index = i" [value]="choir">
+      {{choir.title}}
+    </mat-list-option>
+</mat-selection-list>
+
+<div *ngIf="selected.selectedOptions.selected">
+    <h2>Preview</h2>
+    <p>{{selected.selectedOptions.selected[0]?.value.description}}</p>
+    <h4>Note:</h4>
+    <ul>
+        <li *ngFor="let note of selected.selectedOptions.selected[0]?.value.longDescription">
+            {{note}}
+        </li>
+    </ul>
+    <h4>{{selected.selectedOptions.selected[0]?.value.dateCreated}}</h4>
+    <h4>{{selected.selectedOptions.selected[0]?.value.status}}</h4>
+</div>

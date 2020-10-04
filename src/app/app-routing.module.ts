@@ -4,9 +4,9 @@ import { AboutComponent } from './page/about/about.component';
 import { NotFoundComponent } from './page/common/not-found/not-found.component';
 import { HomepageComponent } from './page/homepage/homepage.component';
 import { OthersComponent } from './page/others/others.component';
+import { CharacterListComponent } from './page/projects/character-list/character-list.component';
 import { ProjectsComponent } from './page/projects/projects.component';
 import { TodoListComponent } from './page/projects/todo-list/todo-list.component';
-
 
 const routes: Routes = [{
   path: '',
@@ -19,7 +19,17 @@ const routes: Routes = [{
   component: ProjectsComponent,
   children: [{
     path: '',
+    component: CharacterListComponent,
+  }, {
+    path: 'character-list',
+    component: CharacterListComponent, 
+  }, { 
+    path: 'todo-list',
     component: TodoListComponent,
+  }, {
+    path: 'recent',
+    redirectTo: '',
+    pathMatch: 'full',
   }],
 }, {
   path: 'others',

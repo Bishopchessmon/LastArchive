@@ -16,7 +16,8 @@ import { NotFoundComponent } from './page/common/not-found/not-found.component';
 import { MaintenanceComponent } from './page/common/maintenance/maintenance.component';
 import { OthersComponent } from './page/others/others.component';
 import { TodoListComponent } from './page/projects/todo-list/todo-list.component';
-import { CharactersListComponent } from './page/projects/characters-list/characters-list.component';
+import { CharacterListComponent } from './page/projects/character-list/character-list.component';
+import { ProjectListComponent } from './page/projects/project-list/project-list.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CharactersListComponent } from './page/projects/characters-list/charact
     MaintenanceComponent,
     OthersComponent,
     TodoListComponent,
-    CharactersListComponent
+    CharacterListComponent,
+    ProjectListComponent
   ],
   imports: [
     BrowserModule,
