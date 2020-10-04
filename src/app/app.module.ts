@@ -12,8 +12,9 @@ import { FooterComponent } from './page/common/footer/footer.component';
 import { HomepageComponent } from './page/homepage/homepage.component';
 import { AboutComponent } from './page/about/about.component';
 import { ProjectsComponent } from './page/projects/projects.component';
-import { FeatureUnavailableComponent } from './page/common/feature-unavailable/feature-unavailable.component';
 import { NotFoundComponent } from './page/common/not-found/not-found.component';
+import { MaintenanceComponent } from './page/common/maintenance/maintenance.component';
+import { OthersComponent } from './page/others/others.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +24,9 @@ import { NotFoundComponent } from './page/common/not-found/not-found.component';
     HomepageComponent,
     AboutComponent,
     ProjectsComponent,
-    FeatureUnavailableComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    MaintenanceComponent,
+    OthersComponent
   ],
   imports: [
     BrowserModule,

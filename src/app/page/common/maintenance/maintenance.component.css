@@ -9,18 +9,19 @@
     background-color: transparent;
 }
 
-.not-found > p {
-}
-
-.not-found > h3 {
+.maintenance > h3 {
     font-weight: 500;
     font-size: calc(65px + (115 - 65) * ((100vw - 300px) / (1600 - 370)));
+    margin-bottom: 0;
 }
 
+.maintenance > h4 {
+    font-weight: 500;
+    font-size: calc(12px + (30 - 12) * ((100vw - 300px) / (1600 - 370)));
+}
 
-.not-found > p {
+.maintenance > p {
     font-weight: 300;
     font-size: calc(8px + (15 - 8) * ((100vw - 300px) / (1600 - 370)));
-    letter-spacing: 1.5px;
     text-transform: uppercase;
 }
