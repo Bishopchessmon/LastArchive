@@ -13,6 +13,12 @@ export class TodoListComponent implements OnInit {
   }
 
   choirs: object[] = [{
+    title: "Guild List",
+    dateCreated: "Oct. 5, 2020",
+    description: "Create a list of Guild using Google Sheet. The Guilds on this list is either Approved or Tentative.",
+    longDescription: ['Tentative refers to guild which may change in the future', 'Approved refers to a guild with absolute description which will never change. Approved Guild can only be renamed and each former name is documented through start and date.'],
+    status: "Pending",
+  }, {
     title: "Character List",
     dateCreated: "Oct. 5, 2020",
     description: "Create a list of characters using Google Sheet. The characters on this list is either Approved or Persona.",
