@@ -1,0 +1,44 @@
+.component {
+}
+
+.project {
+    margin: 50px 20px;
+    padding: 10px 0;
+    display: flex;
+    border-bottom: 1px solid #dddddd;
+}
+
+.description > h5,
+.description > p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.description > h3 {
+    font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 700;
+}
+
+.description > h5 {
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 300;
+}
+
+.description > p {
+    text-align: justify;
+    font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 300;
+    color: #dddddd;
+}
+
+.todo-list {
+    padding: 0 10px;
+}
+
+.todo-list > p {
+    font-weight: 500;
+}
+
+.position-sticky-top {
+    top: 95px;
+}

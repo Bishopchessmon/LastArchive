@@ -1,11 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
+@import "./app/module/material-module/angular-material.default-niksified.css";
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 * {
     /* Calculation is (minPX + (Max - Min) * ((VW - ScreenWidthPX) / (MaximumScreenWidth - MinimumScreenWidth)) */
     /* font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
+    line-height: normal;
 }
 
 /* Layout */
@@ -26,6 +29,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background-color: #ffffff;
 }
 
+.position-sticky-top {
+    position: sticky;
+    top: 0;
+}
+
 /* UTILITY */
 span.spacer {
     flex: 1 1 auto;
@@ -35,7 +43,7 @@ span.spacer {
 span,
 h1, h2, h3, h4, h5, p, 
 li {
-    line-height: 1 !important;
+    line-height: 1;
 }
 .text-center {
     text-align: center !important;
@@ -43,4 +51,4 @@ li {
 
 ::-webkit-scrollbar {
     width: 0;
-  }
+}

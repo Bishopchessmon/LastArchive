@@ -2,14 +2,12 @@
     <div fxFlex class="screen-max-width">
         <div fxFlex class="component-body">
             <div class="projects">
-                <h1>Project List</h1>
-                <span class="spacer"></span>
                 <button mat-flat-button [routerLink]="['project-list']" routerLinkActive="router-link-active" >Project List</button>
                 <button mat-flat-button [routerLink]="['guild-list']" routerLinkActive="router-link-active" >Guild List</button>
                 <button mat-flat-button [routerLink]="['todo-list']" routerLinkActive="router-link-active" >Todo List</button>
                 <mat-divider></mat-divider>
             </div>
-            <router-outlet></router-outlet>
         </div>
     </div>
 </div>
+<router-outlet></router-outlet>

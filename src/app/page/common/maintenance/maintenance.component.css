@@ -13,6 +13,7 @@
     font-weight: 500;
     font-size: calc(65px + (115 - 65) * ((100vw - 300px) / (1600 - 370)));
     margin-bottom: 0;
+    line-height: 100%;
 }
 
 .maintenance > h4 {
