@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import {MatAccordion} from '@angular/material/expansion';
 
 @Component({
   selector: 'app-todo-list',
@@ -7,7 +6,6 @@ import {MatAccordion} from '@angular/material/expansion';
   styleUrls: ['./todo-list.component.css']
 })
 export class TodoListComponent implements OnInit {
-  @ViewChild(MatAccordion) accordion: MatAccordion;
 
   constructor() { }
 
